@@ -44,3 +44,113 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+var movieYearElm=document.getElementById('movieYearRange')
+movieYearElm.addEventListener('mousemove',(e)=>
+{
+    var firstYear=document.querySelector('.firstYear')
+    firstYear.innerHTML=movieYearElm.value+" -"
+})
+var movieScoreElm=document.getElementById('movieScore')
+movieScoreElm.addEventListener('mousemove',(e)=>
+{
+    var minScore=document.querySelector('.minScore')
+    var maxScore=document.querySelector('.maxScore')
+    if(movieScoreElm.value==10)
+    {
+        maxScore.style.left='6%'
+    }
+    else{
+        maxScore.style.left='5%'
+    }
+    minScore.innerHTML=movieScoreElm.value+" -"
+})
+var submitSorter=document.querySelector('.submitFilterSearch')
+submitSorter.addEventListener('click',(e)=>
+{
+  e.preventDefault();
+  var year=document.querySelector('#movieYearRange')
+  var score=document.querySelector('#movieScore')
+  var actors=document.querySelector('#filterActorsSorter')
+  var genre=document.querySelector('#genreFilterSorter')
+  var director=document.querySelector('#directorFilterSorter')
+  var children=document.querySelector('#checkChildren')
+  var adults=document.querySelector('#checkAdults')
+  let filmDiv = document.querySelectorAll('.filminfo');
+  let filmGenre= document.querySelectorAll('.movieGenre');
+  let movieDirector = document.querySelectorAll('.movieDirector');
+  let movieActors = document.querySelectorAll('.movieActors');
+  let movieScore = document.querySelectorAll('.backendScore');
+  var age=document.querySelectorAll('.movieAge')
+  var movieYear=document.querySelectorAll('.movieYear')
+  for (i = 0; i < filmDiv.length; i++) 
+  { 
+    var checkFilm=0
+    if (!filmGenre[i].innerHTML.toLowerCase().includes(genre.value))
+     {
+        filmDiv[i].style.display="none"
+     }
+    else
+    {
+      filmDiv[i].style.display="block";
+      checkFilm +=1
+    } 
+
+    if (!movieDirector[i].innerHTML.toLowerCase().includes(director.value))
+     {
+        filmDiv[i].style.display="none"
+     }
+    else if(checkFilm==1)
+    {
+      filmDiv[i].style.display="block";
+      checkFilm +=1
+    } 
+
+    if (!movieActors[i].innerHTML.toLowerCase().includes(actors.value))
+     {
+        filmDiv[i].style.display="none"
+     }
+    else if(checkFilm==2)
+    {
+      filmDiv[i].style.display="block";
+      checkFilm +=1
+    } 
+    if (movieScore[i].innerHTML <= score.value)
+     {
+        filmDiv[i].style.display="none"
+     }
+    else if(checkFilm==3)
+    {
+      filmDiv[i].style.display="block";
+      checkFilm +=1
+    } 
+    if (age[i].innerHTML.includes('کودکان'))
+     {
+        if (!children.checked) filmDiv[i].style.display="none";
+        else if(checkFilm==4)
+        {
+          filmDiv[i].style.display="block";
+          checkFilm +=1
+        }
+     }
+    if(age[i].innerHTML.includes('بزرگسالان'))
+    {
+      if (!adults.checked) filmDiv[i].style.display="none";
+      else if(checkFilm==4)
+      {
+        filmDiv[i].style.display="block";
+        checkFilm +=1
+      }
+    }
+    if (movieYear[i].innerHTML < year.value)
+     {
+        filmDiv[i].style.display="none"
+     }
+    else if(checkFilm==5)
+    {
+      filmDiv[i].style.display="block";
+    }
+  }
+})

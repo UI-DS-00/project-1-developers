@@ -87,6 +87,52 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
+    <div class="sorter">
+        <div class="formSize">
+            <form class="filter">
+                
+                <label for="movieYearRange" class="yearLabel firstYear">1986 -</label>
+                <input type="range" id="movieYearRange" min="1950" max="2022">
+                <label for="movieYearRange" class="yearLabel lastYear">2022</label>
+                <p class="rangeLabel createYear">سال ساخت</p>
+
+                <label for="movieScore" class="scoreLabel minScore">6 -</label>
+                <input type="range" id="movieScore" min="1.00" max="10.00" >
+                <label for="movieScore" class="scoreLabel maxScore">10</label>
+                <p class="rangeLabel score">امتیاز</p>
+
+                <label for="filterActors" id="filterActors">بازیگران</label>
+                <input type="<textarea" id="filterActorsSorter"></textarea>
+
+                <label for="genreFilter" id="genreFilter">ژانر</label>
+                <!-- <input type="" id="genreFilterSorter"></textarea> -->
+                <select name="generSelect" id="genreFilterSorter">
+                    <option class="genreSelectOptions" value="action">action</option>
+                    <option class="genreSelectOptions" value="romantic">romantic</option>
+                    <option class="genreSelectOptions" value="science">science</option>
+                    <option class="genreSelectOptions" value="police">police</option>
+                    <option class="genreSelectOptions" value="kill">kill</option>
+                </select>
+
+                <label for="directorFilter" id="directorFilter">کارگردان</label>
+                <input type="<textarea" id="directorFilterSorter"></textarea>
+
+                <div class="checkbox-wrapper checkbox-wrapper-children">
+                    <input type="radio" id="checkChildren" name="check" value="" >
+                    <label for="checkChildren">
+                    <span class="childrenCheck"></span>مناسب برای کودکان
+                </label>
+                </div> 
+                <div class="checkbox-wrapper checkbox-wrapper-adults">
+                    <input type="radio" id="checkAdults" name="check" value="">
+                    <label for="checkAdults">
+                    <span class="adultsCheck"></span>مناسب برای بزرگسالان
+                    </label>            
+                </div>
+                <button type="submit" class="submitFilterSearch"> <i class="material-icons searchicon filterSearch" style="color: orange;">search</i></button>
+      </form>
+    </div>
+    </div>
     <script src="mainPageAct.js"></script>
 </body>
 </html>

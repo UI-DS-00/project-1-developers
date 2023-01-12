@@ -288,7 +288,321 @@ img#slideImdbImage
     from {opacity: .4}
     to {opacity: 1}
 }
+body div.sorter
+{
+    position: relative;
+    width: 70%;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 13px;
+    background-color: #242424
+}
+input#movieYearRange
+{
+    position: absolute;
+    top: 24%;
+    left: 3%;
+    width: 20%;
+}
+label.yearLabel
+{
+    font-size: 18px;
+    color: orangered;
+    font-weight: bold;
+}
+label.firstYear
+{
+    position: absolute;
+    left: 3%;
+    top: 14%;
+}
+label.lastYear
+{
+    position: absolute;
+    left: 8%;
+    top: 14%;
+}
+input#movieScore
+{
+    position: absolute;
+    top: 64%;
+    left: 3%;
+    width: 20%;
+}
+label.scoreLabel
+{
+    font-size: 18px;
+    color: orangered;
+    font-weight: bold;
+}
+label.minScore
+{
+    position: absolute;
+    left: 3%;
+    top: 55%;
+}
+label.maxScore
+{
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+p.rangeLabel
+{
+    font-size: 22px;
+    position: relative;
+    color: white;
+}
+p.createYear
+{
+    color: gold;
+    position: relative;
+    left: 165px;
+    top: 25px;
+}
+p.score
+{
+    color: gold;
+    position: relative;
+    left: 200px;
+    top: 77px;
+}
+.submitFilterSearch
+{
+    position: relative;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(68, 68, 68, 0.777);
+    border: 0;
+    border-radius: 0 0 16px 16px;
+    font-size: 20px;
+    padding-right: 8px;
+    transition-duration: 0.8s;
+}
+.submitFilterSearch:hover
+{
+    background-color: rgb(255, 0, 0);
+    transition-duration: 0.8s;
+}
+i.filterSearch
+{
+    text-align: center;
+    font-size: 40px;
+}
+input#filterActorsSorter
+{
+    position: absolute;
+    left: 280px;
+    top: 40px;
+    width: 180px;
+    height: 30px;
+    background-color: #141414;
+    border: 0;
+    color: aliceblue;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 17px;
 
+}
+label#filterActors
+{
+    position: absolute;
+    left: 470px;
+    top: 40px;
+    color: gold;
+    font-size: 20px;
+}
+select#genreFilterSorter
+{
+    position: absolute;
+    left: 830px;
+    top: 40px;
+    width: 180px;
+    height: 30px;
+    background-color: #141414;
+    border: 0;
+    color: aliceblue;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: lato,sans-serif;
+}
+select#genreFilterSorter .genreSelectOptions
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+label#genreFilter
+{
+    position: absolute;
+    left: 1020px;
+    top: 40px;
+    color: gold;
+    font-size: 20px;
+}
+input#directorFilterSorter
+{
+    position: absolute;
+    left: 550px;
+    top: 40px;
+    width: 180px;
+    height: 30px;
+    background-color: #141414;
+    border: 0;
+    color: aliceblue;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 17px;
+
+}
+label#directorFilter
+{
+    position: absolute;
+    left: 740px;
+    top: 40px;
+    color: gold;
+    font-size: 20px;
+}
+label#forAdultsText
+{
+    position: absolute;
+    left: 740px;
+    top: 140px;
+    color: gold;
+    font-size: 20px;
+}
+label#forChildrenText
+{
+    position: absolute;
+    left: 740px;
+    top: 240px;
+    color: gold;
+    font-size: 20px;
+}
+input#forAdults, #forChildren
+{
+    visibility: hidden;
+}
+.checkbox-wrapper .checkbox
+{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.checkbox-wrapper label
+{
+    display: inline-block;
+    color: gold;
+    cursor: pointer;
+    position: relative;
+}
+.checkbox-wrapper label span 
+{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    transform-origin: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+}
+.checkbox-wrapper label span:before 
+{
+    content: "";
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    transform: rotate(45deg);
+    top: 13px;
+    left: 9px;
+    transition: width 50ms ease 50ms;
+    transform-origin: 0% 0%;
+}
+.checkbox-wrapper label span:after
+{
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    transform: rotate(305deg);
+    top: 16px;
+    left: 10px;
+    transition: width 50ms ease;
+    transform-origin: 0% 0%;
+}
+.checkbox-wrapper label:hover span:before
+{
+    width: 5px;
+    transition: width 100ms ease;
+}
+.checkbox-wrapper label:hover span:after 
+{
+    width: 10px;
+    transition: width 150ms ease 100ms;
+}
+.checkbox-wrapper input[type=radio]
+{
+    display: none;
+}
+.checkbox-wrapper input[type=radio]:checked + label span 
+{
+    background-color: rgb(255, 162, 0);
+    transform: scale(1.25);
+}
+.checkbox-wrapper input[type=radio]:checked + label span:after 
+{
+    width: 10px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+}
+.checkbox-wrapper input[type=radio]:checked + label span:before 
+{
+    width: 5px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+}
+.checkbox-wrapper input[type=radio]:checked + label:hover span 
+{
+    background-color: #333;
+    transform: scale(1.25);
+}
+.checkbox-wrapper input[type=radio]:checked + label:hover span:after 
+{
+    width: 10px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+}
+.checkbox-wrapper input[type=radio]:checked + label:hover span:before 
+{
+    width: 5px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+}
+.checkbox-wrapper-children
+{
+    position: relative;
+    left: 830px;
+    top: 30px;
+}
+.checkbox-wrapper-adults
+{
+    position: relative;
+    left: 830px;
+    top: 40px;
+}
 
 
 
