@@ -1,3 +1,8 @@
+const apiKey="547b6aefc5e507d4532e8de7a6e6993f"
+const apiBaseUrl= "https://api.themoviedb.org/3"
+const imageBaseUrl="https://image.tmdb.org/t/p/w300"
+
+
 //search
 var search= document.getElementById('submitFilterSearch')
 search=addEventListener('submit',(e)=>
@@ -306,3 +311,110 @@ submitSorter.addEventListener('click',(e)=>
     }
   }
 })
+
+async function fetchMoviesNowPlaying()
+{
+  const response= await fetch(`${apiBaseUrl}/movie/now_playing?api_key=${apiKey}`) 
+  const jsonResponse = await response.json()
+  const movies=jsonResponse.results
+  displayMovies(movies)
+  console.log(movies);
+}
+function displayMovies(movies)
+{
+  var body=document.querySelector('#filmCards')
+  console.log(body);
+  for(let i=0;i<movies.length;i++)
+  {
+    var date=movies[i].release_date
+    date=date.split("-")
+    if (movies[i].adult) 
+    {
+      body.innerHTML+=`<div class="filminfo">
+    <a href="moviePage.html"><img src=${imageBaseUrl}${movies[i].poster_path} alt="you can't load this image" style="width: 200px; border-radius:8px;" class="filmImage"></a>
+    <a href="moviePage.html" class="filmDownload"><p>دانلود فیلم</p><span class="filmNameInFimmInfo">${movies[i].original_title}</span></a>
+
+    <i class="material-icons clock">access_alarm</i>
+    <p class="filmInfoTitleTime">: زمان</p>
+    <p class="movieTime filmInfoContent time"> دقیقه</p>
+    <span class="movieTime filmInfoContent">88  </span>
+
+    <i class="material-icons genre">movie</i>
+    <p class="filmInfoTitleGenre">: ژانر </p>
+    <span class="movieGenre filmInfoContent">action</span>
+
+    <i class="material-icons director">person</i>
+    <p class="filmInfoTitleDirector">: کارگردان </p>
+    <span class="movieDirector filmInfoContent"> الکساندر فلورنزی</span>
+    
+    <i class="material-icons actors">group</i>
+    <p class="filmInfoTitleActors">: بازیگران</p>
+    <span class="movieActors filmInfoContent"> جان مارستون و آرتور مورگان</span>
+
+    <i class="material-icons country">language</i>
+    <p class="filmInfoTitleCountry">: کشور سازنده</p>
+    <span class="movieCountry filmInfoContent"> آمریکا</span>
+
+    <i class="fa fa-calendar year"></i>
+    <p class="filmInfoTitleYear">: سال ساخت</p>
+    <span class="movieYear filmInfoContent">${date[0]}</span>
+
+    <i class="fa fa-grav age"></i>
+    <p class="filmInfoTitleAge">: رده سنی</p>
+    <span class="movieAge filmInfoContent">بزرگسالان</span>
+
+    <p class="description">${movies[i].overview}</p>
+
+    <span class="backendScore">${movies[i].vote_average}</span>
+    <p class="movieScore">/10</p>
+    <div class="line"></div>
+    <div id="scorePlace"><span class="votes">${movies[i].vote_count}</span></div>
+    <p class="votesText">votes</p>
+    </div>`
+    }
+    else{
+      body.innerHTML+=`<div class="filminfo">
+      <a href="moviePage.html"><img src=${imageBaseUrl}${movies[i].poster_path} alt="you can't load this image" style="width: 200px; border-radius:8px;" class="filmImage"></a>
+      <a href="moviePage.html" class="filmDownload"><p>دانلود فیلم</p><span class="filmNameInFimmInfo">${movies[i].original_title}</span></a>
+  
+      <i class="material-icons clock">access_alarm</i>
+      <p class="filmInfoTitleTime">: زمان</p>
+      <p class="movieTime filmInfoContent time"> دقیقه</p>
+      <span class="movieTime filmInfoContent">88  </span>
+  
+      <i class="material-icons genre">movie</i>
+      <p class="filmInfoTitleGenre">: ژانر </p>
+      <span class="movieGenre filmInfoContent">action</span>
+  
+      <i class="material-icons director">person</i>
+      <p class="filmInfoTitleDirector">: کارگردان </p>
+      <span class="movieDirector filmInfoContent"> الکساندر فلورنزی</span>
+      
+      <i class="material-icons actors">group</i>
+      <p class="filmInfoTitleActors">: بازیگران</p>
+      <span class="movieActors filmInfoContent"> جان مارستون و آرتور مورگان</span>
+  
+      <i class="material-icons country">language</i>
+      <p class="filmInfoTitleCountry">: کشور سازنده</p>
+      <span class="movieCountry filmInfoContent"> آمریکا</span>
+  
+      <i class="fa fa-calendar year"></i>
+      <p class="filmInfoTitleYear">: سال ساخت</p>
+      <span class="movieYear filmInfoContent">${date[0]}</span>
+  
+      <i class="fa fa-grav age"></i>
+      <p class="filmInfoTitleAge">: رده سنی</p>
+      <span class="movieAge filmInfoContent">کودکان</span>
+  
+      <p class="description">${movies[i].overview}</p>
+  
+      <span class="backendScore">${movies[i].vote_average}</span>
+      <p class="movieScore">/10</p>
+      <div class="line"></div>
+      <div id="scorePlace"><span class="votes">${movies[i].vote_count}</span></div>
+      <p class="votesText">votes</p>
+      </div>`
+    }
+  }
+}
+fetchMoviesNowPlaying()

@@ -603,7 +603,250 @@ input#forAdults, #forChildren
     left: 830px;
     top: 40px;
 }
+div.filminfo
+{
+    position: relative;
+    width: 50%;
+    background-color: #242424;
+    margin: auto auto 2.5% 25%;
+    border-radius: 10px;
+    height: 450px;
+}
+img.filmImage
+{
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    transition-duration: 0.3s;
+}
+img.filmImage:hover
+{
+    box-shadow: 0 3px 5px 3px rgb(26, 255, 1),0 -3px 5px 3px rgb(251, 255, 1);
+    transition-duration: 0.5s;
+}
+a.filmDownload
+{
+    color: white;
+    font-size: 27px;
+}
+a.filmDownload p
+{
+    position: absolute;
+    right: 34%;
+    top: 4%;
+    font-family: byekan;
+}
+a.filmDownload span
+{
+    position: absolute;
+    right: 50.5%;
+    top: 6%;
+    font-family: lato, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    width: 280px;
+    overflow: hidden;
+    text-align: right;
+}
+p.filmInfoTitleTime
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 20%;
+}
+.filminfo i.material-icons
+{
+    position: absolute;
+    color: rgb(255, 174, 0);
+    font-size: 20px;
+}
+.filminfo i.clock
+{
+    right: 33.7%;
+    top: 21.3%;
+}
+.filminfo .filmInfoContent
+{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+}
+.filminfo p.time
+{
+    right: 46.5%;
+    top: 21%;
+}
+.filminfo span.movieTime
+{
+    font-family: byekan;
+    right: 42.7%;
+    top: 20%;
+}
+.filminfo i.genre
+{
+    right: 33.7%;
+    top: 30%;
+}
+.filminfo span.movieGenre
+{
+    font-family: lato,sans-serif;
+    right: 42.3%;
+    top: 29.3%;
+}
+p.filmInfoTitleGenre
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 28.6%;
+}
+.filminfo i.director
+{
+    font-size: 26px;
+    right: 33%;
+    top: 37.7%;
+}
+.filminfo span.movieDirector
+{
+    font-family: byekan;
+    right: 46.8%;
+    top: 38%;
+}
+p.filmInfoTitleDirector
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 37.6%;
+}
+.filminfo i.actors
+{
+    font-size: 26px;
+    right: 33%;
+    top: 47.4%;
+}
 
+.filminfo span.movieActors
+{
+    font-family: byekan;
+    right: 46.3%;
+    top: 47%;
+}
+p.filmInfoTitleActors
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 47%;
+}
+.filminfo i.country
+{
+    font-size: 26px;
+    right: 33%;
+    top: 56.3%;
+}
+
+.filminfo span.movieCountry
+{
+    font-family: byekan;
+    right: 50.5%;
+    top: 56%;
+}
+p.filmInfoTitleCountry
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 56%;
+}
+.filminfo i.year
+{
+    position: absolute;
+    color: rgb(255, 174, 0);
+    font-size: 22px;
+    right: 33.5%;
+    top: 65%;
+}
+
+.filminfo span.movieYear
+{
+    font-family: byekan;
+    right: 48.8%;
+    top: 64.5%;
+}
+p.filmInfoTitleYear
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 64.6%;
+}
+.filminfo i.age
+{
+    position: absolute;
+    color: rgb(255, 174, 0);
+    font-size: 24px;
+    right: 33%;
+    top: 73.7%;
+}
+
+.filminfo span.movieAge
+{
+    font-family: byekan;
+    right: 46.5%;
+    top: 73%;
+}
+p.filmInfoTitleAge
+{
+    font-family: byekan;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 37%;
+    top: 73%;
+}
+p.description
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 3.4%;
+    top: 82%;
+    width: 700px;
+    height: 70px;
+    overflow: auto;
+}
+span.backendScore
+{
+    font-family: lato, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    color: orange;
+}
+.filminfo p.movieScore
+{
+    font-family: lato, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    left: 8.8%;
+    top: 6.6%;
+}
 
 
 
