@@ -158,3 +158,133 @@ p.english4
     color: rgb(255, 255, 255);
     transition-duration: 0.7s;
 }
+.slideBar
+{
+    width: 70%;
+    height: 500px;
+    margin: 40px auto 40px;
+}
+.mySlides
+{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+i.fa-heart
+{
+    color: red;
+    position: absolute;
+    right: 18%;
+    bottom: 7%;
+    font-size: 47px;
+    z-index: 2;
+}
+i.fa-plus-square
+{
+    font-size: 22px;
+    color: orange;
+    position: absolute;
+    right: 17.8%;
+    bottom: 7.7%;
+    z-index: 2;
+}
+i.fa-circle
+{
+    font-size: 53px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 17.8%;
+    bottom: 6.8%;
+    z-index: 0;
+}
+span.slideScore
+{
+    position: absolute;
+    bottom: 23%;
+    left: 18%;
+    color: orange;
+    font-size: 40px;
+    font-family: lato;
+}
+p.slideMovieScore
+{
+    font-family: lato;
+    position: absolute;
+    bottom: 23.6%;
+    left: 21.8%;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+.fade span.filmName
+{
+    font-family: lato;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    bottom: 7%;
+    left: 18%;
+}
+img#slideImdbImage
+{
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    bottom: 17.5%;
+    left: 17.85%;
+} 
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 32.8%;
+    bottom: 2.3%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 111, 0);
+    background-color: #353535;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+    line-height: 450px;
+}
+.prev
+{
+    left: 11.9%;
+    border-radius: 10px 0 0 10px;
+}
+.next
+{
+    right: 11.9%;
+    border-radius: 0 10px 10px 0;
+}
+.prev:hover, .next:hover
+{
+    background-color: rgb(241, 174, 3);
+}
+.dot 
+{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover 
+{
+    background-color: #717171;
+}
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
