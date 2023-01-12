@@ -44,7 +44,159 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
+var wishList=document.getElementById('wishlistHeart1')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel1')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeartPlus1')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel1')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeartCircle1')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel1')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeart2')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel2')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeartPlus2')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel2')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeartCircle2')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel2')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeart3')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel3')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeartPlus3')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel3')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
+var wishList=document.getElementById('wishlistHeartCircle3')
+var movieAddWishlist=false
+wishList.addEventListener('click' ,(e)=>
+{
+  e.preventDefault();
+  var wishListFeel=document.getElementById('wishlistHeartFeel3')
+  if(wishListFeel.classList.contains('far'))
+  {
+    wishListFeel.classList.replace('far','fas')
+    movieAddWishlist=true
+  }
+  else
+  {
+    wishListFeel.classList.replace('fas','far')
+    movieAddWishlist=false
+  }
+})
 
 
 var movieYearElm=document.getElementById('movieYearRange')
