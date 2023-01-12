@@ -288,3 +288,22 @@ img#slideImdbImage
     from {opacity: .4}
     to {opacity: 1}
 }
+
+
+
+
+
+
+@font-face {
+    font-family: byekan;
+    src: url(fonts/Byekan.ttf);
+    src: url(fonts/Byekan.woff);
+}
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: lalezar;
+    src: url(fonts/lalezar.ttf);
+}
