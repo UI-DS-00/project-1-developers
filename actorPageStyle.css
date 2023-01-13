@@ -230,3 +230,46 @@ p.actorDeathyearTitle
     right: 26%;
     top: 48%;
 }
+div.relatedTitles
+{
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(black,rgb(255, 72, 0),rgb(255, 166, 0),rgb(255, 225, 0),black);
+    margin-top: 40px;
+    position: relative;
+}
+div.relatedTitles p#titlesText
+{
+    font-family: lalezar;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+    left: 45%;
+}
+div.relatedTitles div#titleLine
+{
+    width: 8%;
+    height: 2.5px;
+    background-color: #ffc400;
+    position: absolute;
+    left: 45%;
+    top: 55px;
+}
+div.relatedTitles div.relatedMovie
+{
+    width: 180px;
+    height: 250px;
+    background-image: url(images/filmImage3.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 80px 16px 20px 16px;
+    transition-duration: 0.5s;
+    border: 3px solid rgb(0, 0, 0);
+}
+div.relatedTitles div.relatedMovie:hover
+{
+    transition-duration: 0.5s;
+    box-shadow: -6px 0 12px 1px rgb(48, 48, 48), 6px 0 12px 1px rgb(48, 48, 48), 0px 6px 12px 1px rgb(48, 48, 48);
+}
