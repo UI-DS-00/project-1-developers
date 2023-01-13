@@ -158,3 +158,75 @@ p.english4
     color: rgb(255, 255, 255);
     transition-duration: 0.7s;
 }
+div.actorInfo
+{
+    height: 380px;
+    width: 100%;
+    background-image: url(images/actor\ background.jpg);
+    background-size: 100% 100%;
+    margin-top: 50px;
+    position: relative;
+}
+div.actorInfo img#actorImage
+{
+    width: 16.5%;
+    height: 90%;
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    transition-duration: 0.4s;
+    border: 5px solid rgba(248, 161, 0, 0.855);
+    border-radius: 15px;
+}
+div.actorInfo img:hover
+{
+    box-shadow: 0 0 15px 1.5px rgb(255, 204, 0);
+    transition-duration: 0.4s;
+}
+.actorInfo .actorInfoContent
+{
+    font-family: lalezar;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+p.actorNameTitle
+{
+    right: 22%;
+    top: 9%;
+}
+.actorInfo span.actorName
+{
+    right: 25%;
+    top: 9%;
+}
+p.actorProfessionTitle
+{
+    right: 22%;
+    top: 22%;
+}
+.actorInfo span.actorProfession
+{
+    right: 26%;
+    top: 21.5%;
+}
+p.actorBirthyearTitle
+{
+    right: 22%;
+    top: 35%;
+}
+.actorInfo span.actorBirthyear
+{
+    right: 26%;
+    top: 35%;
+}
+p.actorDeathyearTitle
+{
+    right: 22%;
+    top: 48%;
+}
+.actorInfo span.actorDeathyear
+{
+    right: 26%;
+    top: 48%;
+}
