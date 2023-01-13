@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+div.login{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 753.7px;
+}
+.left{
+    background-image: url(images/1.jpg);
+    position: absolute;
+    left: 0;
+    width: 35%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.right{
+    background-color: #1e1e1e;
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+}
+.right h1{
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 27px;
+}
+input.form-control
+{
+    height: 100%;
+    background-color: #1e1e1e;
+    color: aliceblue;
+    font-size: 25px;
+    border: 2px solid orangered;
+}
+input.form-control:hover
+{
+    background-color: #1e1e1e;
+    color: aliceblue;
+}
+input.form-control:focus-within
+{
+    border: 2px solid yellow;
+    color: aliceblue;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 3px 2.5px orangered;
+}
+.entry{
+    position: absolute;
+    text-align: right;
+    left: 25%;
+    right: 25%;
+    background-color: #1e1e1e;
+    height: 55px;
+    font-size: 23px;
+    padding-right: 10px;
+    color: white;
+}

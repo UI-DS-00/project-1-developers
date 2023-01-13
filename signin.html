@@ -9,6 +9,29 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="right login">
+        <h1> عضویت در سایت</h1>
+         <form id="signin" class="needs-validation " novalidate>
+             <div class="entry" id="name"><input type="text" pattern="(\w){5,}" id="usernameInput" class="form-control" placeholder="username" required >
+                 <div class="invalid-feedback unFeed">your username must be 5 characters at least</div>
+             </div>
+             <div class="entry" id="password"><input type="password" id="passwordInput" class="form-control" placeholder="password" required></div>
+             <div class="entry" id="passwordrepeat"><input type="password" id="passwordrepeatInput" class="form-control" placeholder="password repeat" required>
+                 <div class="invalid-feedback prFeed">password repeat incorrect</div>
+             </div>
+             <div class="entry" id="email"><input type="email" id="emailInput" class="form-control" placeholder="email" required>
+                 <div class="invalid-feedback emFeed">please use @ in your email</div>
+             </div>
+             <div class="entry" id="phonenumber"><input type="text" pattern="09(\d){9,9}"  id="phonenumberInput" class="form-control" placeholder="phone number" required>
+                 <div class="invalid-feedback pnFeed">phone number is not valid</div>
+             </div>
+             <button type="submit" id="submit" class="entry" value="عضویت در سایت">عضویت در سایت</button>
+         </form>
+         <h2>یا</h2>
+         <a href="login.html" class="loginbuttom">ورود به پنل کاربری</a>
+         <a href="forgetpass.html" class="forgotpass">آیا رمز خود را فراموش کرده اید؟</a>
+     </div>
+     <div class="left login"></div>
     <script src="signinact.js"></script>
 </body>
 </html>
