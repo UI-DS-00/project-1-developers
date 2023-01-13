@@ -847,6 +847,104 @@ span.backendScore
     left: 8.8%;
     top: 6.6%;
 }
+.line
+{
+    background-color: white;
+    position: absolute;
+    width: 9.79%;
+    height: 1px;
+    left: 3.4%;
+    top: 12%;
+}
+p.votesText
+{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    left: 5.3%;
+    top: 16.4%;
+}
+.filminfo div#scorePlace
+{
+    position: absolute;
+    left: 3.4%;
+    top: 12.5%;
+    width: 75px;
+    height: 20px;
+    text-align: center;
+}
+span.votes
+{
+    font-family: lato, Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+}
+i.wishListHearts
+{
+    color: red;
+    position: relative;
+    left: 3px;
+    bottom: 20px;
+    font-size: 40px;
+    z-index: 3;
+}
+.paginationContainer
+{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #26262600;
+  position: relative;
+  bottom: -20px;
+}
+.pagination ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(36, 36, 36);
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.pagination ul li{
+  color: orange;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 10px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination ul li.dots{
+  font-size: 28px;
+  cursor: default;
+  margin: 0 5px;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: rgb(26, 26, 26);
+  background: orange;
+}
 
 
 
