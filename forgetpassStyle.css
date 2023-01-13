@@ -1,0 +1,168 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 753.7px;
+    position: relative;
+}
+div.right, .left{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.left{
+    background-image: url(images/loginbackground.jpg);
+    position: absolute;
+    left: 0;
+    width: 35%;
+    background-size: 100% 100%;
+}
+.right{
+    background-color: #1e1e1e;
+    position: absolute;
+    right: 0;
+    width: 65%;
+}
+.line1
+{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #5a5a5a;
+    top: 25%;
+    left: 22%;
+}
+.line2
+{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #5a5a5a;
+    top: 25%;
+    right: 22%;
+}
+.right h1{
+    text-align: center;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 27px;
+}
+input.form-control
+{
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: aliceblue;
+    font-size: 25px;
+    border: 2px solid orangered;
+}
+input.form-control:hover
+{
+    background-color: #1e1e1e;
+    color: aliceblue;
+}
+input.form-control:focus-within
+{
+    border: 2px solid yellow;
+    color: aliceblue;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 3px 2.5px orangered;
+}
+.entry
+{
+    position: absolute;
+    text-align: right;
+    left: 22%;
+    right: 21%;
+    background-color: #1e1e1e;
+    height: 55px;
+    font-size: 23px;
+    padding-right: 10px;
+    color: white;
+}
+.right form #email{
+    top: 34%;
+}
+div.emFeed
+{
+    position: relative;
+    right: 295px;
+    top: 2px;
+}
+.right form #submit{
+    position: absolute;
+    text-align: center;
+    top: 48%;
+    left: 22%;
+    right: 22%;
+    color: white;
+    background-color: #eb8307;
+    transition-duration: 0.6s;
+    border: 2px solid gray;
+    height: 55px;
+    font-size: 23px;
+    border: 0;
+    cursor: pointer;
+}
+.right form #submit:hover{
+    background-color: #a95d00;
+    transition-duration: 0.6s;
+}
+.lineor1
+{
+    position: absolute;
+    width: 260px;
+    height: 2px;
+    background-color: #5a5a5a;
+    top: 60.5%;
+    left: 22%;
+}
+.lineor2
+{
+    position: absolute;
+    width: 260px;
+    height: 2px;
+    background-color: #5a5a5a;
+    top: 60.5%;
+    right: 22%;
+}
+.right h2{
+   text-align: center;
+    position: absolute;
+    top: 57.6%;
+    left: 25%;
+    right: 25%;
+    color: white;
+    font-size: 30px;
+}
+.right a.loginbuttom{
+    text-decoration: none;
+    line-height:55px;
+     position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 22%;
+    right: 22%;
+    color: white;
+    background-color: #2e2e2e;
+    height: 55px;
+    font-size: 23px;
+    transition-duration: 0.6s;
+}
+.right a.loginbuttom:hover
+{
+    background-color: #5a5a5a;
+    transition-duration: 0.6s;
+}
+.right a.forgotpass{
+    text-decoration: none;
+    color: orange;
+    position: absolute;
+    bottom: 22.5%;
+    right: 22%;
+    font-size: 20px;
+}
