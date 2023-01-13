@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #050505;
+}
+.signin
+{
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+}
+.signin div.userPanel
+{
+    width: 220px;
+    height: 70px;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    right: 17%;
+    top: 13%;
+    border-radius: 10px;
+}
+.signin div.userPanel img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7.14%;
+    right: 5px;
+}
+.signin div.userPanel span.userName
+{
+    font-family: lato,serif;
+    font-size: 16px;
+    max-width:140px ;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: orange;
+}
+.signin div.userPanel p.welcomeText
+{
+    font-family: lalezar,serif;
+    font-size: 16px;
+    max-width:140px ;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10%;
+    left: 23%;
+    color: white;
+}
