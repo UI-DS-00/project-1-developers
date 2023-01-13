@@ -2,6 +2,19 @@ const apiKey="547b6aefc5e507d4532e8de7a6e6993f"
 const apiBaseUrl= "https://api.themoviedb.org/3"
 const imageBaseUrl="https://image.tmdb.org/t/p/w300"
 
+function likedFilms()
+{
+  var likedFIlmNumber=document.querySelector('#likedFilmNumber')
+  if(likedFIlmNumber.innerHTML>9)
+  {
+    likedFIlmNumber.style.fontSize='13px'
+    likedFIlmNumber.style.right='17.3px'
+    likedFIlmNumber.style.bottom='2px'
+  } 
+}
+likedFilms()
+
+
 
 //search
 var search= document.getElementById('submitFilterSearch')

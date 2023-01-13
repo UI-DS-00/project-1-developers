@@ -47,6 +47,52 @@ a.sign{
 a.log{
     right: 10%;
 }
+a#likedFilms
+{
+    width: fit-content;
+    height: fit-content;
+}
+a#likedFilms i.fa-heart
+{
+    color: orange;
+    font-size: 24px;
+    position: relative;
+    left: 15.5px;
+    bottom: 37px;
+}
+a#likedFilms i#backCircle
+{
+    color: #212121;
+    font-size: 40px;
+    position: relative;
+    left: 51px;
+    bottom: 32px;
+}
+a#likedFilms i#backCircleShadow
+{
+    color: #5d5d5d25;
+    font-size: 60px;
+    position: relative;
+    left: 105px;
+    bottom: 25px;
+}
+a#likedFilms i#numCircle
+{
+    color: #ffae00;
+    font-size: 19px;
+    position: relative;
+    left: 10px;
+    bottom: 55px;
+}
+a#likedFilms i#numCircle #likedFilmNumber
+{
+    color: white;
+    position: relative;
+    font-family: lato,serif,sans-serif;
+    font-size: 18px;
+    right: 14.8px;
+    bottom: 0.7px;
+}
 .header
 {
     position: relative;
