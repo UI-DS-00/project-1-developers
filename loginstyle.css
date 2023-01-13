@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 753.7px;
+    position: relative;
+}
+div.login{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.left{
+    background-image: url(images/loginbackground.jpg);
+    position: absolute;
+    left: 0;
+    width: 35%;
+    background-size: 100% 100%;
+}
+.right{
+    background-color: #1e1e1e;
+    position: absolute;
+    right: 0;
+    width: 65%;
+}
+.right h1{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 27px;
+}

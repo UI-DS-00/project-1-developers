@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
+    <div class="right login">
+        <h1>ورود به سایت</h1>
+         <form id="login" class="needs-validation " novalidate>
+             <div class="entry" id="name"><input type="text" pattern="(\w){5,}" id="usernameInput" class="form-control" placeholder="username" required >
+                 <div class="invalid-feedback unFeed">your username must be 5 characters at least</div>
+             </div>
+             <div class="entry" id="password"><input type="password" id="passwordInput" class="form-control" placeholder="password" required></div>
+             <button type="submit" id="submit" class="entry" value="عضویت در سایت">ورود به پنل کاربری </button>
+         </form>
+         <h2>یا</h2>
+         <a href="signin.html" class="loginbuttom">ثبت نام در سایت</a>
+         <a href="forgetpass.html" class="forgotpass">آیا رمز خود را فراموش کرده اید؟</a>
+     </div>
+     <div class="left login"></div>
     <script src="loginact.js"></script>
 </body>
 </html>
