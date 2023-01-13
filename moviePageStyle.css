@@ -646,6 +646,133 @@ div.carousel-cell span.actorName
     bottom: 71%;
     left: -20px;
   }
+  .comment
+{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 6px;
+    border: 3px solid orange;
+    background-color: #1c1b1b;
+    padding: 0 0 40px 0px;
+}
+.comment span.commentsNumber
+{
+    font-size: 40px;
+    font-family: lato;
+    color: rgb(255, 140, 0);
+    position: absolute;
+    left: 100px;
+    top: 60px;
+}
+.comment div.userComment
+{
+    max-width: 95%;
+    min-width: 95%;
+    overflow-y: auto;
+    display: inline-block;
+    background-color: rgb(0, 1, 29);
+    background: linear-gradient(90deg, rgb(0, 1, 29) 91%,orangered 91%);
+    margin-left: 27.5px;
+    margin-top: 40px;
+    color: white;
+    border: 3px solid orange;
+    border-radius: 5px;
+    font-size: 20px;
+    direction: rtl;
+    padding-right: 6px;
+    padding-top: 2px;
+    position: relative;
+}
+.comment div.userComment img.commentUserImage
+{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 22px;
+}
+.comment div.userComment .commentUsernameDiv
+{
+    width: 100%;
+    height: 30px;
+}
+.comment div.userComment span.commentUsername
+{
+    font-family: lato;
+    font-size: 24px;
+    position: absolute;
+    right: 120px;
+    top: 5px;
+}
+.comment div.userComment span.userCommentText
+{
+    font-family: lalezar;
+    font-size: 20px;
+    position: absolute;
+    right: 120px;
+    top: 40px;
+}
+.comment p.commentText
+{
+    font-size: 25px;
+    font-family: lato;
+    color: white;
+    position: absolute;
+    left: 55px;
+    top: 100px;
+}
+.comment input#commmentInput
+{
+    font-family: lato,lalezar,byekan;
+    font-size: 18px;
+    color: white;
+    text-align: right;
+    padding: 10px 15px 100px 5px;
+    margin-top: 200px;
+    margin-left: 55px;
+    width: 90%;
+    background-color: #2a2a2a;
+    border: 0;
+}
+.comment button#commmentSubmitButton
+{
+    width: 140px;
+    height: 50px;
+    background-color: rgb(251, 142, 0);
+    color: white;
+    font-family: byekan;
+    font-size: 18px;
+    border-radius: 10px 40px;
+    transition-duration: 0.7s;
+    position: relative;
+    top: 15px;
+    margin-left: 8px;
+}
+.comment button#commmentSubmitButton:hover
+{
+    border-radius: 40px 10px;
+    transition-duration: 0.7s;
+}
+.comment i.fa-commenting
+{
+    font-size: 50px;
+    color: orange;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    text-shadow: 8px -8px rgb(0, 0, 0);
+}
+.comment p.userCommentText
+{
+    font-family: lalezar;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 70px;
+    top: 100px;
+}
 
 
 

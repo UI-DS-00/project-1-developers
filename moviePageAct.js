@@ -14,3 +14,26 @@ userRate.addEventListener('submit', (e)=>
     else if(star5.checked) console.log(5);
     else console.log(0);
 })
+
+
+let commentForm=document.querySelector('#commmentSubmitButton')
+commentForm.addEventListener('click',(e)=>
+{
+    e.preventDefault()
+    let userComment=document.querySelector('#commmentInput').value
+    if (userComment!='') 
+    {
+        let commentDiv=document.getElementById('comments')
+        commentDiv.innerHTML+=
+        `<div class="userComment">
+        <img class="commentUserImage" src="images/unknown person.png" alt="">
+        <div class="commentUsernameDiv">
+        <span class="commentUsername">ali_khorasani</span>
+        </div>
+        <span class="userCommentText"> ${userComment} </span>
+        </div>`
+    }
+    let commentNumText=document.querySelector('.commentsNumber')
+    let commentNum=document.querySelectorAll('.userComment')
+    commentNumText.innerHTML=commentNum.length
+})
