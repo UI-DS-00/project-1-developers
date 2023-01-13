@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="forgetpassStyle.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="right">
+        <div class="line1"></div>
+       <h1>فراموشی رمز</h1>
+       <div class="line2"></div>
+        <form id="forgetpass" class="needs-validation " novalidate>
+            <div class="entry" id="email"><input type="email" id="emailInput" class="form-control" placeholder="email" required >
+                <div class="invalid-feedback emFeed">you must use @ in your email</div>
+            </div>
+            <button type="submit" id="submit" class="entry">ارسال ایمیل بازیابی</button>
+        </form>
+        <div class="lineor1"></div>
+        <h2>یا</h2>
+        <div class="lineor2"></div>
+        <a href="signin.html" class="loginbuttom">ثبت نام در سایت</a>
+    </div>
+    <div class="left"></div>
+    <script src="forgetpassact.js"></script>
 </body>
 </html>
